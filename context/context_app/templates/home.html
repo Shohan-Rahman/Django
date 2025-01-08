@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Context</title>
+    </head>
+    <body>
+        <h1>Hello, this is app home page</h1>
+        <h2>Author : {{author}}</h2>
+        <h2>Age : {{age}}</h2>
+        <h2>List : {{list}}</h2>
+
+        {% comment %} Condition Statement {% endcomment %}
+
+        {% if age >= 18 %}
+            <h4>You will get driving license.</h4>
+        {% elif age >= 10 and age < 18 %}
+            <h4>You will not get driving license.</h4>
+        {% else %}
+            <h4>You are a child.</h4>
+        {% endif %}
+
+        {% comment %} for loop {% endcomment %}
+
+        {% for i in courses %}
+            <h3>{{i.id}} - {{i.name}} - {{i.Taka}}</h3>
+        {% endfor%}
+    </body>
+</html>
